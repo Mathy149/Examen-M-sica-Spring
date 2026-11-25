@@ -1,0 +1,116 @@
+### 1. Crear Cancion 1
+POST http://localhost:8084/api/canciones
+Content-Type: application/json
+
+{
+  "titulo": "Bohemian Rhapsody",
+  "artista": "Queen",
+  "album": "A Night at the Opera",
+  "genero": "Rock",
+  "duracionSegundos": 354
+}
+
+### 2. Crear Cancion 2
+POST http://localhost:8084/api/canciones
+Content-Type: application/json
+
+{
+  "titulo": "Billie Jean",
+  "artista": "Michael Jackson",
+  "album": "Thriller",
+  "genero": "Pop",
+  "duracionSegundos": 294
+}
+
+### 3. Crear Cancion 3
+POST http://localhost:8084/api/canciones
+Content-Type: application/json
+
+{
+  "titulo": "Smells Like Teen Spirit",
+  "artista": "Nirvana",
+  "album": "Nevermind",
+  "genero": "Rock",
+  "duracionSegundos": 301
+}
+
+### 4. Listar Canciones (CRUD)
+GET http://localhost:8084/api/canciones
+
+### 5. Caso Especial Cancion (Conteo)
+GET http://localhost:8084/api/canciones/conteo?genero=Rock
+
+### 6. Crear Videojuego 1
+POST http://localhost:8084/api/videojuegos
+Content-Type: application/json
+
+{
+  "titulo": "Minecraft",
+  "plataforma": "PC",
+  "clasificacion": "E",
+  "precio": 29.99,
+  "anioLanzamiento": "2011-11-18"
+}
+
+### 7. Crear Videojuego 2
+POST http://localhost:8084/api/videojuegos
+Content-Type: application/json
+
+{
+  "titulo": "God of War",
+  "plataforma": "PS5",
+  "clasificacion": "M",
+  "precio": 59.99,
+  "anioLanzamiento": "2018-04-20"
+}
+
+### 8. Crear Videojuego 3
+POST http://localhost:8084/api/videojuegos
+Content-Type: application/json
+
+{
+  "titulo": "Zelda",
+  "plataforma": "Switch",
+  "clasificacion": "E",
+  "precio": 49.99,
+  "anioLanzamiento": "2023-05-12"
+}
+
+### 9. Caso Especial Videojuego (Rango precio)
+GET http://localhost:8084/api/videojuegos/precio?min=10&max=50
+
+### 10. Crear Cliente 1
+POST http://localhost:8084/api/clientes
+Content-Type: application/json
+
+{
+  "nombres": "Juan Perez",
+  "correo": "juan@mail.com",
+  "ciudad": "Quito",
+  "edad": 25
+}
+
+### 11. Crear Cliente 2
+POST http://localhost:8084/api/clientes
+Content-Type: application/json
+
+{
+  "nombres": "Maria Lopez",
+  "correo": "maria@mail.com",
+  "ciudad": "Guayaquil",
+  "edad": 30
+}
+
+### 12. Crear Cliente 3
+POST http://localhost:8084/api/clientes
+Content-Type: application/json
+
+{
+  "nombres": "Carlos Ruiz",
+  "correo": "carlos@mail.com",
+  "ciudad": "Quito",
+  "edad": 22
+}
+
+### 13. Caso Especial Cliente (Ciudad)
+GET http://localhost:8084/api/clientes/ciudad?nombre=Quito
